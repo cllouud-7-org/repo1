@@ -6,6 +6,8 @@ jobs:
     runs-on: sep-runson-image
     container:
       image: quay.io/ascend/cann:latest
+      volumes:
+        - /var/run/docker.sock:/var/run/docker.sock
     steps:
       - name: Show NPU info
         run: |
