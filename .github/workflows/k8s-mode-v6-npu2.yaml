@@ -1,0 +1,13 @@
+name: Test k8s mode v6-n2
+on:
+  workflow_dispatch:
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: linux-arm64-npu-1-k8smode-v6-n2
+    container:
+      image: ascendai/cann:latest
+      
+    steps:
+      - name: Show NPU info
+        run: |
+          npu-smi info
