@@ -1,4 +1,4 @@
-name: Test Npu Resource
+name: Show npu resource
 on:
   workflow_dispatch:
 jobs:
