@@ -4,8 +4,7 @@ on:
 jobs:
   Explore-GitHub-Actions:
     runs-on: linux-arm64-npu-1
-    container:
-      image: ascendai/cann:latest
+  
       
     steps:
       - name: Show NPU info
